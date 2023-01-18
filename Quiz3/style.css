@@ -1,0 +1,21 @@
+body {
+  background-color: black;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: beige;
+  border-radius: 4px;
+  margin-bottom: 2px;
+}
+
+div.special {
+  background-color: lightsalmon;
+}
+
+span.buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
