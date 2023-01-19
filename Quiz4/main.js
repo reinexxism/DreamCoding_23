@@ -1,13 +1,3 @@
-// 해결한 문제
-// 1. mouse cursor의 현재 x, y 좌표를 실시간으로 알아내기
-// 2. 그것을 browser화면상에 div 박스로 나타내기
-// 3. div가 mouse cursor를 따라다니지 않음
-
-// 해결되지 않는 문제
-// 2. mouse cursor가 지정된 Img로 바뀌지 않음
-// ->
-// 3. 저 따라다니는 하얀 선(?) 뭔지 모르겠음 어케 하냐 진짜??
-
 const pointer = document.getElementById("pointer");
 const following = document.getElementById("following");
 const horizontal = document.getElementById("lineHorizon");
