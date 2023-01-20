@@ -2,15 +2,22 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>실습4. 좌표 찾아 007</title>
-    <script src="main.js" defer></script>
+    <title>실습4. 좌표를 찾아라 007</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
   </head>
   <body>
-    <div id="lineHorizon"></div>
-    <div id="lineVertical"></div>
-    <img src="img/target.png" alt="following target img" id="following" />
-    <span id="pointer"></span>
+    <div class="line horizon"></div>
+    <div class="line vertical"></div>
+    <img
+      src="img/target.png"
+      alt="following cursor"
+      class="cursor"
+      width="80"
+      height="80"
+    />
+    <span class="currentAxis">Hello?</span>
   </body>
 </html>

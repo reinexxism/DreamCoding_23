@@ -1,34 +1,18 @@
-const pointer = document.getElementById("pointer");
-const following = document.getElementById("following");
-const horizontal = document.getElementById("lineHorizon");
-const vertical = document.getElementById("lineVertical");
-
-function showCurrentAxis(e) {
-  pointer.innerText = `${e.clientX}px, ${e.clientY}px`;
-}
-
-function movePointer(e) {
-  pointer.style.left = `${e.clientX + 30}px`;
-  pointer.style.top = `${e.clientY + 20}px`;
-}
-
-function moveFollowing(e) {
-  following.style.left = `${e.clientX - 40}px`;
-  following.style.top = `${e.clientY - 40}px`;
-}
-
-function moveHorizon(e) {
-  horizontal.style.left = `${e.clientX}px`;
-}
-
-function moveVertical(e) {
-  vertical.style.top = `${e.clientY}px`;
-}
+const horizon = document.querySelector(".horizon");
+const vertical = document.querySelector(".vertical");
+const cursor = document.querySelector(".cursor");
+const currentAxis = document.querySelector(".currentAxis");
 
 document.addEventListener("mousemove", (e) => {
-  showCurrentAxis(e);
-  movePointer(e);
-  moveFollowing(e);
-  moveHorizon(e);
-  moveVertical(e);
+  const x = e.clientX;
+  const y = e.clientY;
+  console.log(`${x}, ${y}`);
+
+  horizon.style.top = `${y}px`;
+  vertical.style.left = `${x}px`;
+  cursor.style.top = `${y}px`;
+  cursor.style.left = `${x}px`;
+  currentAxis.style.top = `${y}px`;
+  currentAxis.style.left = `${x}px`;
+  currentAxis.innerHTML = `${x}px, ${y}px`;
 });
