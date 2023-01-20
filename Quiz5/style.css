@@ -1,0 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.startBtn {
+  display: block;
+  margin: 0 auto;
+}
+
+.startBtn:hover {
+  background-color: thistle;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
